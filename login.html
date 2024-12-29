@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css" >
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h4>node mysql</h4>
+    <ul>
+        <li> <a href="/">Home</a></li>
+        <li> <a href="login">login</a></li>
+        <li> <a href="/regist">register</a></li>
+    </ul>
+       
+    </nav>
+    <div class="container mt-4">
+       <div class="card" >
+ 
+  <div class="card">
+    <div class="card header">
+        register form
+    </div>
+    <div class="card-body">
+        <form action="/auth/regist" method="POST">
+  <div class="form-group"> 
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="john maina" Name="name">
+   </div>
+
+  <div class="form-group">
+    <label for="email">email address</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+
+  <div class="form-group">
+    <label for="password">password</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+  <div class="form-group">
+    <label for="password confirm">confirm password</label>
+    <input type="password" class="form-control" id="confirmpassword" name="passwordconfirm">
+  </div>
+ <button type="submit" class="btn btn-primary">register user</button>
+</form> 
+   </div>
+  </div>
+    {{#if message}}
+    <h4 class=" alert alert-danger mt-4">{{message}}</h4>
+
+    {{/if}}
+</div>
+  
+    </div>
+    <h1>handlebars  homepage</h1>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>   
+</html>
